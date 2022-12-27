@@ -1,5 +1,7 @@
 export default {
-
+  /**
+   * @description v-drag指令绑定值为className，即拖动时的样式绑定
+   */
   mounted (el, binding, vnode, prevVnode) {
     for (let i of el.children) {
       i.setAttribute('draggable', true)
@@ -30,8 +32,4 @@ export default {
     })
 
   },
-}
-function clearAllClass (nodes) {
-  for (let i of nodes) {
-  }
 }
